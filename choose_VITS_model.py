@@ -83,7 +83,7 @@ class Ui_Dialog(object):
         self.pushButton.setText(_translate("Dialog", "..."))
         self.pushButton_2.setText(_translate("Dialog", "..."))
         self.label_3.setText(_translate("Dialog", "模型配置文件路径:"))
-        self.label_4.setText(_translate("Dialog", "TextLabel"))
+        self.label_4.setText(_translate("Dialog", "说话人"))
 
         self.radioButton.setChecked(False)
         self.radioButton_2.setChecked(False)
@@ -156,6 +156,7 @@ class Ui_Dialog(object):
             else:
                 pass
         else:
+            Ativate = False
             #返回全局变量
             if self.radioButton.isChecked() == True:
                 real_basic_UI.path_of_pth = self.path_model

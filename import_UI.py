@@ -66,7 +66,7 @@ class Ui_Dialog(object):
         path = QtWidgets.QFileDialog.getOpenFileNames()
         self.lineEdit.setText(path[0][0])
         if path[0][0][-4:] == '.txt' or path[0][0][-4:] == '.TXT':
-            with open(path[0][0],'r') as f:
+            with open(path[0][0],'r',encoding='UTF-8') as f:
                 text = f.read()
             self.plainTextEdit.setPlainText(text)
         else:
